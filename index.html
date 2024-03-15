@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- integrator.js -->
+    <!-- src="http://127.0.0.1:5500/dist/fa/welcome/__feature_hub_feature_app_module_container__.js" -->
+    <feature-app
+      id="welcome:welcome-feature-app"
+      src="http://127.0.0.1:5500/dist/fa/welcome/main.js"
+      css='[{"href":"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"}]'
+      config="{}"
+      loading="lazy"
+      moduleType="federated"
+    >
+      <div class="placeholder-area">Loading…</div>
+    </feature-app>
+    <!-- ohter App -->
+    <script
+      type="module"
+      src="http://127.0.0.1:5501/dist/mtn-feature-hub-integrator-csr.js"
+      defer
+    ></script>
+  </body>
+</html>
